@@ -21,7 +21,7 @@ jobs:
       - name: Install deps
         run: |
           sudo apt update
-          sudo apt install ninja-build
+          sudo apt install flex ninja-build
       - name: Run Cmake
         run: |
           mkdir build
