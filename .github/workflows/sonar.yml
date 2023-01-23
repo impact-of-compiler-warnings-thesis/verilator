@@ -23,6 +23,8 @@ jobs:
           sudo apt update
           sudo apt install ninja-build libfl-dev
       - name: Run Cmake
+        env:
+          FLEX_INCLUDE: /usr/bin/flex
         run: |
           mkdir build
           cd build 
