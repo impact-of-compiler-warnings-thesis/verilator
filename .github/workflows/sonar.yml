@@ -21,10 +21,8 @@ jobs:
       - name: Install deps
         run: |
           sudo apt update
-          sudo apt install flex ninja-build
+          sudo apt install ninja-build libfl
       - name: Run Cmake
-        env:
-          FLEX_INCLUDE: /usr/bin/flex
         run: |
           mkdir build
           cd build 
