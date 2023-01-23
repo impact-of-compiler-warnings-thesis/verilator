@@ -23,6 +23,8 @@ jobs:
           sudo apt update
           sudo apt install flex ninja-build
       - name: Run Cmake
+        env:
+          FLEX_INCLUDE: /usr/bin/flex
         run: |
           mkdir build
           cd build 
